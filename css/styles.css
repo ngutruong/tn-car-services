@@ -10264,5 +10264,5 @@ form .row:first-child .floating-label-form-group {
 
 /* Custom new CSS */
 .shorter-font-size {
-  font-size: 12px;
+  font-size: 12px !important;
 }
