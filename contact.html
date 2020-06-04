@@ -33,56 +33,56 @@
         </nav>
         <section class="page-section" id="contact">
             <div class="container">
-              <form>
+              <form id="contact-form" action="https://formspree.io/xgenkyrg" method="POST">
                 <h2>Contact Us</h2>
+
+                <!-- First row -->
                 <div class="row">
+                  <!-- Name field -->
                   <div class="col-md-4">
                     <div class="form-group">
                       <label for="name">Name</label>
-                      <input type="text" class="form-control" placeholder="" id="name">
+                      <input type="text" class="form-control" placeholder="" id="name" name="name" required="required" data-validation-required-message="Please enter your name.">
                     </div>
                   </div>
-                  <!--  col-md-6   -->
-
+                  <!-- Vehicle field -->
                   <div class="col-md-4">
                     <div class="form-group">
                       <label for="vehicle">Vehicle <i>(required for oil change)</i></label>
-                      <input type="text" class="form-control" placeholder="e.g. 2020 Toyota Corolla" id="vehicle">
+                      <input type="text" class="form-control" placeholder="e.g. 2020 Toyota Corolla" id="vehicle" name="vehicle">
                     </div>
                   </div>
-                  <!--  col-md-6   -->
-                    <div class="col-md-4">
+                  <!--  Mileage field   -->
+                  <div class="col-md-4">
                     <div class="form-group">
                       <label for="mileage">Mileage <i>(required for oil change)</i></label>
-                      <input type="number" class="form-control" placeholder="in kilometers" id="mileage">
+                      <input type="number" class="form-control" placeholder="in kilometers" id="mileage" name="mileage">
                     </div>
                   </div>
-                  <!--  col-md-6   -->
                 </div>
+                <!-- end First row -->
 
-
+                <!-- Second row -->
                 <div class="row">
+                  <!-- Phone Number field -->
                   <div class="col-md-6">
                     <div class="form-group">
                       <label for="phone">Phone Number</label>
-                      <input type="tel" class="form-control" placeholder="" id="phone">
+                      <input type="tel" class="form-control" placeholder="" id="phone" name="phone">
                     </div>
-
-
                   </div>
-                  <!--  col-md-6   -->
 
+                  <!-- Email Address field -->
                   <div class="col-md-6">
-
                     <div class="form-group">
                       <label for="email">E-mail Address</label>
-                      <input type="email" class="form-control" id="email" placeholder="">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="" required="required" data-validation-required-message="Please enter your e-mail address.">
                     </div>
                   </div>
-                  <!--  col-md-6   -->
                 </div>
-                <!--  row   -->
+                <!--  end Second row   -->
 
+                <!-- Service Options row -->
                 <label for="service-options">Please select a service:</label>
                 <div class="radio">
                   <label>
@@ -94,20 +94,25 @@
                     <input type="radio" name="service-options" id="service-options" value="oil-change"> Oil Change
                   </label>
                 </div>
+                <!-- end Service Options row -->
 
+                <!-- Message row -->
                 <div class="row">
                     <div class="col-md-12">
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea class="form-control" id="message" rows="5" placeholder="Enter message here" required="required" data-validation-required-message="Please enter a message."></textarea>
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Introduce yourself! To schedule an appointment, please enter the date here." required="required" data-validation-required-message="Please enter a message."></textarea>
                         <p class="help-block text-danger"></p>
                     </div>
                     </div>
                 </div>
-                <!--  row   -->
+                <!--  end Message row   -->
 
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button id="contact-submit" type="submit" class="btn btn-primary">Submit</button>
               </form>
+              <br />
+              <p class="alert alert-success" id="good-status">Thanks! Your contact form has been submitted successfully!</p>
+              <p class="alert alert-danger" id="bad-status">Oops! We hit a snag! Please try again later.</p>
             </div>
         </section>
         <!-- Footer-->
@@ -155,7 +160,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <!-- Contact form JS-->
         <script src="assets/mail/jqBootstrapValidation.js"></script>
-        <script src="assets/mail/contact_me.js"></script>
+        <script src="assets/mail/contactme.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
