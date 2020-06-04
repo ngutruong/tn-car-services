@@ -117,7 +117,7 @@
                     <div class="col-md-12">
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Introduce yourself! To schedule an appointment, please enter the date and details here. If you select 'Other', please enter details here." required="required" data-validation-required-message="Please enter a message."></textarea>
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Introduce yourself! To schedule an appointment, please enter one of the following available dates and details here. If you select 'Other', please enter details here." required="required" data-validation-required-message="Please enter a message."></textarea>
                         <p class="help-block text-danger"></p>
                     </div>
                     </div>
@@ -126,6 +126,12 @@
 
                 <button id="contact-submit" type="submit" class="btn btn-primary">Submit</button>
               </form>
+              <br />
+              <p class="lead mb-0"><i>Available Dates:</i></p>
+              <ul>
+                <li><i>Saturday, June 6</i></li>
+                <li><i>Sunday, June 7</i></li>
+              </ul>
               <br />
               <p class="alert alert-success" id="good-status">Thanks! Your contact form has been submitted successfully!</p>
               <p class="alert alert-danger" id="bad-status">Oops! We hit a snag! Please try again later.</p>
