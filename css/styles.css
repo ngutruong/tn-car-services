@@ -10265,3 +10265,8 @@ form .row:first-child .floating-label-form-group {
 .shorter-font-size {
   font-size: 12px !important;
 }
+
+.sans-masthead {
+  padding-top: calc(2rem + 12px);
+}
+
