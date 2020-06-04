@@ -15,6 +15,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/video.css" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -31,20 +32,19 @@
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
-                <!-- Masthead Avatar Image--><!--img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="" /--><!-- Masthead Heading-->
-                <!-- Masthead Avatar Image--><img class="masthead-avatar mb-5" src="assets/img/caricon.png" alt="" /><!-- Masthead Heading-->
+        <header>
+          <div class="overlay"></div>
+          <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="assets/vid/car.mp4" type="video/mp4">
+          </video>
+          <div class="container h-100">
+            <div class="d-flex h-100 text-center align-items-center">
+              <div class="w-100 text-white">
                 <h1 class="masthead-heading text-uppercase mb-0">TN Auto Services</h1>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-car"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Masthead Subheading-->
                 <p class="masthead-subheading font-weight-light mb-0">Up-and-coming Auto Services Centre in the Falls</p>
+              </div>
             </div>
+          </div>
         </header>
         <!-- Services Section-->
         <section class="page-section portfolio" id="services">
