@@ -10265,3 +10265,35 @@ form .row:first-child .floating-label-form-group {
 .shorter-font-size {
   font-size: 12px !important;
 }
+
+.sans-masthead {
+  padding-top: calc(2rem + 12px);
+}
+
+.btn-rainbow-hover {
+  color: #343a40;
+  border-color: #343a40;
+}
+
+.btn-rainbow-hover:hover {
+  background: #f09433; 
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  color: #fff;
+}
+
+.btn-blue-hover {
+  color: #343a40;
+  border-color: #343a40;
+}
+
+.btn-blue-hover:hover {
+  background: rgb(109,179,242);
+  background: -moz-linear-gradient(top,  rgba(109,179,242,1) 25%, rgba(84,163,238,1) 45%, rgba(54,144,240,1) 67%, rgba(54,144,240,1) 67%, rgba(54,144,240,1) 67%, rgba(30,105,222,1) 100%);
+  background: -webkit-linear-gradient(top,  rgba(109,179,242,1) 25%,rgba(84,163,238,1) 45%,rgba(54,144,240,1) 67%,rgba(54,144,240,1) 67%,rgba(54,144,240,1) 67%,rgba(30,105,222,1) 100%);
+  background: linear-gradient(to bottom,  rgba(109,179,242,1) 25%,rgba(84,163,238,1) 45%,rgba(54,144,240,1) 67%,rgba(54,144,240,1) 67%,rgba(54,144,240,1) 67%,rgba(30,105,222,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6db3f2', endColorstr='#1e69de',GradientType=0 );
+  color: #fff;
+}
